@@ -5,7 +5,6 @@ mkdir ~/.data/todo
 echo '# todo : script from "scripts_linux" repository' >> ~/.bashrc
 echo 'alias todo="bash '$(pwd)'/todo.bash"' >> ~/.bashrc
 
-#!/bin/bash
 echo "do you want to delete this setup file for the todo script? [y/n]"
 read answer
 if  [[ $answer == "y" ]]; then
@@ -15,3 +14,4 @@ else
         echo "not removed"
 fi
 
+exit 0
