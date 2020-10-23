@@ -16,7 +16,7 @@ watch out, this will also make aan alias "todo"
 if you already have this and you run setup.bash, you will have this alias twice in you ~/.bashrc file
 
 
-# trein
+# clirail
 
 ### Description
 
