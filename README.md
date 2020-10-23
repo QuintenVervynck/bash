@@ -1,8 +1,7 @@
-# Scripts_linux
-
+## Scripts_linux
 The scripts I use in linux (ubuntu)
 
-## todo
+# todo
 
 ### Description
 
