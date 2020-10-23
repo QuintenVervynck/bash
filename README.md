@@ -1,14 +1,14 @@
-### Scripts_linux
+# Scripts_linux
 
 The scripts I use in linux (ubuntu)
 
 ## todo
 
-# Description
+### Description
 
 script to handle todo lists
 
-# Installation 
+### Installation 
 
 run setup.bash in the /todo directory
 
