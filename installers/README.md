@@ -1,13 +1,13 @@
 ## installers
 
-# description
+### description
 installations for varius commonly used programs
-# warning
+### warning
 It is advised to first open the script to see what will be installed
 
 
-### install haskell
-# usage
+## install haskell
+### usage
 bash install_haskell.bash
-# description
+### description
 installs haskell stack and upgrades it to latest
