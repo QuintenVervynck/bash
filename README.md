@@ -1,5 +1,5 @@
 ## Scripts_linux
-The scripts I use in linux (ubuntu)
+The bash scripts I use in linux (ubuntu)
 
 
 # todo
