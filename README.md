@@ -18,3 +18,7 @@ A script that shows the weather.
 # urbandict
 ### Description
 a script to get the urban defenition of a word
+
+# chrome
+### Description
+A script to open frequently used internet pages based on the given keyword, if no keyword is given it just opens google-chrome
