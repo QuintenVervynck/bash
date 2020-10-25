@@ -1,24 +1,21 @@
-## Scripts_linux
 The bash scripts I use in linux (ubuntu)
 
-
-# todo
-### Description
-script to handle todo lists
+# chrome
+A script to open frequently used internet pages based on the given keyword, if no keyword is given it just opens google-chrome
 
 # clirail
-### Description
 A script to know when your train is comming.
 It is made for the Belgium railway system
 
-# weather
-### Description
-A script that shows the weather.
+# installers
+Just a collection of scripts that install specific things, the name of each script specifies what will get installed
+
+# todo
+script to handle todo lists
 
 # urbandict
-### Description
 a script to get the urban defenition of a word
 
-# chrome
-### Description
-A script to open frequently used internet pages based on the given keyword, if no keyword is given it just opens google-chrome
+# weather
+A script that shows the weather.
+
