@@ -8,7 +8,7 @@ echo 'alias trein="clirail"' >> ~/.bashrc
 echo "do you want to delete this setup file for the clirail script? [y/n]"
 read answer
 if  [[ $answer == "y" ]]; then
-        rm test.bash
+        rm setup.bash
         echo "removed"
 else
         echo "not removed"

@@ -8,7 +8,7 @@ echo 'alias todo="bash '$(pwd)'/todo.bash"' >> ~/.bashrc
 echo "do you want to delete this setup file for the todo script? [y/n]"
 read answer
 if  [[ $answer == "y" ]]; then
-        rm test.bash
+        rm setup.bash
         echo "removed"
 else
         echo "not removed"

@@ -6,7 +6,7 @@ echo 'alias weather="bash '$(pwd)'/weather.bash"' >> ~/.bashrc
 echo "do you want to delete this setup file for the weather script? [y/n]"
 read answer
 if  [[ $answer == "y" ]]; then
-        rm test.bash
+        rm setup.bash
         echo "removed"
 else
         echo "not removed"
