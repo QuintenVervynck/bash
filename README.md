@@ -29,3 +29,15 @@ run setup.bash in the "clirail" directory
 
 It is basicly just a python script that I have made an alias for.
 It is made for the Belgium railway system, so made a dutch alias called "trein"
+
+
+# weather
+
+### Description
+
+A script that shows the weather.
+
+### Installation
+
+run setup.bash in the "weather" directory
+all it does is make an alias
