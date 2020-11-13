@@ -2,7 +2,7 @@
 
 echo 'installing the folowing packages: fortune cowsay lolcat figlet'
 sudo apt install fortune cowsay lolcat figlet
-echo '# terminal greeting : script from "https://github.com/QuintenVervynck/bash" repository' >> ~/.bashrc
+echo '# terminal greeting : script from "https://github.com/QuintenVervynck/scripts" repository' >> ~/.bashrc
 echo 'bash /home/quinten/scripts/startup/startup.bash' >> ~/.bashrc
 
 echo "do you want to delete this setup file for the terminal greeting script? [y/n]"

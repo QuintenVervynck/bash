@@ -2,7 +2,7 @@
 
 mkdir ~/.data 2> /dev/null
 mkdir ~/.data/backup
-echo '# backup : script from "https://github.com/QuintenVervynck/bash" repository' >> ~/.bashrc
+echo '# backup : script from "https://github.com/QuintenVervynck/scripts" repository' >> ~/.bashrc
 echo 'alias backup="bash '$(pwd)'/backup.bash"' >> ~/.bashrc
 
 echo "do you want to delete this setup file for the backup script? [y/n]"

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo '# weather : script from "https://github.com/QuintenVervynck/bash" repository' >> ~/.bashrc
+echo '# weather : script from "https://github.com/QuintenVervynck/scripts" repository' >> ~/.bashrc
 echo 'alias weather="bash '$(pwd)'/weather.bash"' >> ~/.bashrc
 
 echo "do you want to delete this setup file for the weather script? [y/n]"
