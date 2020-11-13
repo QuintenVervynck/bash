@@ -13,6 +13,9 @@ Script to know when your train is coming, made for the Belgian railway system
 # installers
 A collection of scripts that install specific things, the name of each script specifies what will get installed
 
+# startup
+Script that shows a terminal greeting
+
 # todo
 Script to handle to-do lists
 
