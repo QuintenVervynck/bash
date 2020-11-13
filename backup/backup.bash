@@ -35,7 +35,9 @@ CURR_DIRS=$(find $DIRS -not -path "*/.git/*" -not -path "*/.idea/*" -printf '%p;
 # indicates whether the backupsystem is connected, will be checked if needed
 IS_CONNECTED="no"
 
-
+# some counters
+COUNT_MODIFIED=0
+COUNT_NEW=0
 #################################################
 # FUNCTIONS
 
@@ -100,12 +102,18 @@ comparator () {
                                         # check if it is not the data file for the backup script
                                         if [[ $file != "/home/quinten/scripts/backups/data.txt" ]]; then
                                                 # backup needed
-                                                echo $YEL"modified:  "$file $END
+		                                # count
+						COUNT_MODIFIED=$((COUNT_MODIFIED + 1))
+                		                # print in terminal for user
+						echo $YEL"modified:  "$file $END
                                         fi
                                 fi
 
                         # not yet in backup, is new
                         else
+                                # count
+				COUNT_NEW=$((COUNT_NEW + 1))
+                                # print in terminal for user
                                 echo $RED"new:       "$file $END
                         fi
 
@@ -148,6 +156,8 @@ do_backup () {
                                         # new backup needed
                                         rm $bfile
                                         cp $file $bfile
+                                        # count
+					COUNT_MODIFIED=$((COUNT_MODIFIED + 1))
                                         # print in terminal for user
                                         echo $GRN"modified:  "$file $END
                                 fi
@@ -155,6 +165,8 @@ do_backup () {
                         else
                                 # backup needed
                                 cp $file $bfile
+                                # count
+				COUNT_NEW=$((COUNT_NEW + 1))
                                 # print in terminal for user
                                 echo "new:       "$file
                         fi
@@ -188,6 +200,7 @@ while getopts ":hl" opt; do
 		l  ) 	# optie -l (list)
 			echo $CYA"LISTING FILES THAT REQUIRE A BACKUP"$END
 			comparator
+			echo $CYA"NEW FILES: "$COUNT_NEW", MODIFIED FILES: "$COUNT_MODIFIED
 			exit 0
          		;;
     		\? ) 	# invalid option
@@ -206,5 +219,7 @@ check_backup_location
 do_backup
 # save the data of the files in the backup, so we can call the -l option even when the backuplocation is not present
 create_backup_list
+# some feedback
+echo $CYA"NEW FILES: "$COUNT_NEW", MODIFIED FILES: "$COUNT_MODIFIED
 
 exit 0
