@@ -1,7 +1,7 @@
 The bash scripts I use on Linux (Ubuntu)
 
 # backup
-script for incrementing backups
+Script for incrementing backups
 when the drive you back your files up to is not connected you can still check which files require to be backed up
 
 # chrome
