@@ -4,6 +4,8 @@
 installations for varius commonly used programs
 
 ### usage
-bash install_haskell.bash
+bash <installation file>
 
-- install haskell
+### list
+- haskell
+  install_haskell.bash
