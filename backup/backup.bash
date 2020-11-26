@@ -57,9 +57,8 @@ check_backup_location () {
 ########################
 # CREATE BACKUP LIST
 create_backup_list () {
-        find ${BACKUP_LOCATION}/home/quinten/ -exec stat --printf %Y {} \; -exec echo "#"{} \; > /home/quinten/scripts/backups/data.txt
-        sed -i 's/\/media\/quinten\/Samsung_T5\/UBUNTU_BACKUP//g' /home/quinten/scripts/backups/data.txt
-        cp /home/quinten/scripts/backups/data.txt $BACKUP_LOCATION/home/quinten/scripts/backups/data.txt
+        find ${BACKUP_LOCATION}/home/quinten/ -exec stat --printf %Y {} \; -exec echo "#"{} \; > ~/.data/backup/data.txt
+        sed -i 's/\/media\/quinten\/Samsung_T5\/UBUNTU_BACKUP//g' ~/.data/backup/data.txt
 }
 
 
