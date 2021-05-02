@@ -19,6 +19,10 @@ Script that shows a terminal greeting
 # todo
 Script to handle to-do lists
 
+# tv
+Script to remember movies/shows you watched and there rating
+you can also get a "to watch" list
+
 # urbandict
 Script to get the urban definition of a word
 
