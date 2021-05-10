@@ -7,12 +7,6 @@ when the drive you back your files up to is not connected you can still check wh
 1. mkdir ~/.data 2> /dev/null
 2. mkdir ~/.data/backup
 
-# chrome
-Script to open frequently used internet pages (uses google-chrome)
-
-# clirail
-Script to know when your train is coming, made for the Belgian railway system
-
 # installers
 A collection of scripts that install specific things, the name of each script specifies what will get installed
 
